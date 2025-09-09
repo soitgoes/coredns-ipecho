@@ -61,7 +61,7 @@ func (p *ipecho) echoIP(w dns.ResponseWriter, r *dns.Msg) bool {
 					Class:  dns.ClassINET,
 					Ttl:    p.Config.TTL,
 				},
-				A: ip,
+				A: Replace(ip, '-', '.'),
 			})
 		} else {
 			if p.Config.Debug {
