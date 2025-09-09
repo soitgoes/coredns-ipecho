@@ -1,4 +1,4 @@
-module github.com/Eun/coredns-ipecho
+module github.com/soitgoes/coredns-ipecho
 
 go 1.18
 
